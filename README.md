@@ -17,7 +17,7 @@
 ```  
 
 3. Select the subscriptions IDs that you wish to enable Lighthouse for and hit enter.  
-4. You can confirm the subscription is deployed by confirm the ProvisioningState is "Succeeded" and also by going to viewing "Customers" under Azure Lighthouse from our AHEAD tenant (signing in with your first.last@thinkahead.com creds).  
+4. You can confirm the subscription is deployed by confirm the ProvisioningState is "Succeeded".
 
 #### Deploy Lighthouse without the Contributor offering
 If a client does not want the Contributor offering created (only wants Read-Only) then replace the code in step 3 with the following.  
