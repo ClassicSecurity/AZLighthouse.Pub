@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "ReadOnly"
+        },
+        "mspOfferDescription": {
+            "value": "Azure Lighthouse"
+        },
+        "managedByTenantId": {
+            "value": "TENANT_ID"
+        },
+        "authorizations": {
+            "value": [
+                {
+                    "principalId": "GROUP_OBJECT_ID",
+                    "principalIdDisplayName": "Read-Only-Offer-Name",
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
+                },
+                {
+                    "principalId": "GROUP_OBJECT_ID",
+                    "principalIdDisplayName": "Lighthouse Management",
+                    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46"
+                }
+            ]
+        }
+    }
+}
